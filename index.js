@@ -33,7 +33,7 @@ if (outPut == me){
     names.pop(outPut);
     outPut = choose(names);
 }
-
+names.push(me);
 await setDoc(doc(db, "secretSanta", "Names"), {
     List: names
   });
